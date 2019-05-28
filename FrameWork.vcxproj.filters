@@ -35,6 +35,9 @@
     <Filter Include="Scene\Load">
       <UniqueIdentifier>{d12659d0-b27f-44b2-8349-d2a9957f2ba6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Scene\Picture">
+      <UniqueIdentifier>{8cdb5bdf-2b25-4b95-aeb5-25180093a3fe}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="singleton.h">
@@ -76,6 +79,9 @@
     <ClInclude Include="cLoadScene.h">
       <Filter>Scene\Load</Filter>
     </ClInclude>
+    <ClInclude Include="PictureScene.h">
+      <Filter>Scene\Picture</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cInputManager.cpp">
@@ -109,6 +115,9 @@
     </ClCompile>
     <ClCompile Include="cImageManager.cpp">
       <Filter>Manager\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="PictureScene.cpp">
+      <Filter>Scene\Picture</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
