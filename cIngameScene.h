@@ -7,6 +7,8 @@ private:
 	cFrame * m_PlayerFrame;
 	Point Pos;
 	bool b_Move;
+
+	int imageNum;
 public:
 	cIngameScene();
 	virtual ~cIngameScene();
