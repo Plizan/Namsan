@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "cIngameScene.h"
 
+#pragma warning(disable:4996)
 
 Point m_BackGroundPos;
 
@@ -21,6 +22,7 @@ void cIngameScene::Init()
 	Pos.y = 0;
 	b_Move = false;
 
+	imageNum = 0;
 	//프레임 , 애니메이션을 위한 것이다.
 	m_PlayerFrame = new cFrame;
 
@@ -37,8 +39,13 @@ void cIngameScene::Init()
 
 void cIngameScene::Update()
 {
+<<<<<<< HEAD
 
 	//Game_main = game;
+=======
+	m_PlayerFrame->Frame();
+
+>>>>>>> 2da323efcff4d33a78ab8e13dc778d25bcd24ead
 	INPUT->GetMousePos().x;
 	INPUT->GetMousePos().y;
 
@@ -53,6 +60,7 @@ void cIngameScene::Update()
 		DEBUG_LOG("c");
 		SCENE->ChangeScene("Ingame_Info");
 	}
+<<<<<<< HEAD
 
 		
 	
@@ -61,6 +69,19 @@ void cIngameScene::Update()
 
 
 
+=======
+	if (INPUT->KeyDown(VK_SPACE)) {
+
+		DEBUG_LOG("Space");
+
+		imageNum++;
+
+		char temp[30];
+		sprintf(temp, "./Capture/%d Model.bmp", imageNum);
+
+		CAPTURE->WindowCapture(CAPTURE->FocusScreenCapture(), CAPTURE->ConverCtoWC(temp));
+	}
+>>>>>>> 2da323efcff4d33a78ab8e13dc778d25bcd24ead
 }
 
 
@@ -74,12 +95,17 @@ void cIngameScene::Render()
 	//이미지 출력 방법 : cLoadScene에서 추가한 이미지를 사용한다.
 	//IMAGE->FindImage("이름")을 하여 이미지를 찾을 수 있다.
 	//IMAGE->Render(이미지, 좌표, true = 이미지의 중심을 중앙으로 설정, 제거할 컬러키);
+<<<<<<< HEAD
 	
 			IMAGE->Render(IMAGE->FindImage("game"), m_BackGroundPos, false);
 		m_Button[0]->Render();
 		m_Button[1]->Render();
 
 	
+=======
+	IMAGE->Render(IMAGE->FindImage("BackGround"), m_BackGroundPos, false);
+	IMAGE->Render(IMAGE->FindImage("HHHHH")->FindImage(0), Pos, true, RGB(255, 0, 255));
+>>>>>>> 2da323efcff4d33a78ab8e13dc778d25bcd24ead
 }
 
 void cIngameScene::Release()

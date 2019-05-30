@@ -99,7 +99,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>Level2</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -147,7 +147,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <ClInclude Include="cButton.h" />
+=======
+    <ClInclude Include="cCapture.h" />
+>>>>>>> 2da323efcff4d33a78ab8e13dc778d25bcd24ead
     <ClInclude Include="cImageManager.h" />
     <ClInclude Include="cIngameScene.h" />
     <ClInclude Include="cIngame_start.h" />
@@ -168,7 +172,11 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <ClCompile Include="cButton.cpp" />
+=======
+    <ClCompile Include="cCapture.cpp" />
+>>>>>>> 2da323efcff4d33a78ab8e13dc778d25bcd24ead
     <ClCompile Include="cImageManager.cpp" />
     <ClCompile Include="cIngameScene.cpp" />
     <ClCompile Include="cIngame_start.cpp" />

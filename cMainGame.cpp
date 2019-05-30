@@ -30,7 +30,7 @@ void cMainGame::Init(HWND hWnd)
 	SetTimer(m_hWnd, 0, 1000, NULL);
 
 	IMAGE->Init();
-
+	CAPTURE->Init(hWnd);
 	//Init 에서 Scene을 추가시켜준다 순서대로 이름, Scene 클래스
 	SCENE->AddScene("Load", new cLoadScene);
 	SCENE->AddScene("Ingame", new cIngameScene);
@@ -79,6 +79,7 @@ void cMainGame::Release()
 	cImageManager::ResetInstance();
 	cInputManager::ResetInstance();
 	cSceneManager::ResetInstance();
+	cCapture::ResetInstance();
 }
 
 void cMainGame::InputHDC(HDC hdc)

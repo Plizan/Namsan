@@ -38,8 +38,13 @@
     <Filter Include="Scene\Picture">
       <UniqueIdentifier>{8cdb5bdf-2b25-4b95-aeb5-25180093a3fe}</UniqueIdentifier>
     </Filter>
+<<<<<<< HEAD
     <Filter Include="Object\Button">
       <UniqueIdentifier>{41196bf2-4c1e-450a-a321-87bbb5709e09}</UniqueIdentifier>
+=======
+    <Filter Include="Manager\Capture">
+      <UniqueIdentifier>{6ec94a53-7c32-427d-9fbb-1b13fde9b07e}</UniqueIdentifier>
+>>>>>>> 2da323efcff4d33a78ab8e13dc778d25bcd24ead
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -85,6 +90,7 @@
     <ClInclude Include="PictureScene.h">
       <Filter>Scene\Picture</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="cButton.h">
       <Filter>Object\Button</Filter>
     </ClInclude>
@@ -93,6 +99,10 @@
     </ClInclude>
     <ClInclude Include="cIngame_Info.h">
       <Filter>Scene\Ingame</Filter>
+=======
+    <ClInclude Include="cCapture.h">
+      <Filter>Manager\Capture</Filter>
+>>>>>>> 2da323efcff4d33a78ab8e13dc778d25bcd24ead
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -131,6 +141,7 @@
     <ClCompile Include="PictureScene.cpp">
       <Filter>Scene\Picture</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="cButton.cpp">
       <Filter>Object\Button</Filter>
     </ClCompile>
@@ -139,6 +150,10 @@
     </ClCompile>
     <ClCompile Include="cIngame_Info.cpp">
       <Filter>Scene\Ingame</Filter>
+=======
+    <ClCompile Include="cCapture.cpp">
+      <Filter>Manager\Capture</Filter>
+>>>>>>> 2da323efcff4d33a78ab8e13dc778d25bcd24ead
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
