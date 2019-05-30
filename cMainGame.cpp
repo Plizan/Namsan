@@ -1,9 +1,10 @@
 #include "stdafx.h"
 #include "cMainGame.h"
-
+#include "Ingame_game.h"
 #include "cLoadScene.h"
 #include "cIngameScene.h"
-
+#include "cIngame_start.h"
+#include "cIngame_Info.h"
 cMainGame::cMainGame()
 {
 }
@@ -33,9 +34,11 @@ void cMainGame::Init(HWND hWnd)
 	//Init 에서 Scene을 추가시켜준다 순서대로 이름, Scene 클래스
 	SCENE->AddScene("Load", new cLoadScene);
 	SCENE->AddScene("Ingame", new cIngameScene);
-	
+	SCENE->AddScene("Ingame_start", new cIngame_start);
+	SCENE->AddScene("Ingame_Info", new cIngame_Info);
 	//처음으로 보여줄 씬으로 바꾼다
 	SCENE->ChangeScene("Load");
+
 }
 
 void cMainGame::Update()

@@ -147,8 +147,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="cButton.h" />
     <ClInclude Include="cImageManager.h" />
     <ClInclude Include="cIngameScene.h" />
+    <ClInclude Include="cIngame_start.h" />
     <ClInclude Include="cInputManager.h" />
     <ClInclude Include="cLoadScene.h" />
     <ClInclude Include="cMainGame.h" />
@@ -158,6 +160,7 @@
     <ClInclude Include="cSingleTexture.h" />
     <ClInclude Include="cTexture.h" />
     <ClInclude Include="FrameWork.h" />
+    <ClInclude Include="cIngame_Info.h" />
     <ClInclude Include="PictureScene.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="singleton.h" />
@@ -165,8 +168,10 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="cButton.cpp" />
     <ClCompile Include="cImageManager.cpp" />
     <ClCompile Include="cIngameScene.cpp" />
+    <ClCompile Include="cIngame_start.cpp" />
     <ClCompile Include="cInputManager.cpp" />
     <ClCompile Include="cLoadScene.cpp" />
     <ClCompile Include="cMainGame.cpp" />
@@ -176,6 +181,7 @@
     <ClCompile Include="cSingleTexture.cpp" />
     <ClCompile Include="cTexture.cpp" />
     <ClCompile Include="FrameWork.cpp" />
+    <ClCompile Include="cIngame_Info.cpp" />
     <ClCompile Include="PictureScene.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

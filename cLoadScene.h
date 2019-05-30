@@ -1,6 +1,7 @@
 #pragma once
 #include "cScene.h"
-class cLoadScene : public cScene
+class cLoadScene : 
+	public cScene
 {
 private:
 	cTexture * m_BackGround;

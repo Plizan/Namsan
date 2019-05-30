@@ -20,10 +20,33 @@ void cLoadScene::Init()
 	//이미지 추가
 
 	//이미지는 여기서 추가시킨다. 순서대로 이름, 경로, 이미지 갯수
-	Load("BackGround", "./Image/BackGround/1.bmp");
-	Load("Player", "./Image/Player/(%d).bmp", 2);
-	Load("HHHHH", "./Image/OH.bmp");
+	Load("game", "./Image/BackGround/TitleBackGround.bmp");
+	Load("game_start", "./Image/BackGround/Title_Bg.bmp");
+	Load("game_Info", "./Image/BackGround/main.bmp");
+	//Load("GameInfo", "./Image/BackGround/InGame_Bg.bmp");
 
+
+
+	//Load("Player", "./Image/Player/(%d).bmp", 2);
+	//Load("HHHHH", "./Image/OH.bmp");
+	//Load("Button1", "./lmage/Button/ButtonHow.bmp");
+	
+	//Load("Button2_Nomal", "./Image/Button/ButtonHow2.bmp");
+	//Load("Button_start_Nomal","./Image/Button/ButtonPlay.bmp");
+	Load("Button_start_Nomal", "./Image/Button/ButtonPlay.bmp");
+	Load("Button_start_OnCursor","./Image/Button/ButtonLeave.bmp");
+	Load("Button_start_Click", "./Image/Button/ButtonHow.bmp");
+	//Load("Button_start_Click","./Image/Button/ButtonHow2.bmp");
+
+	Load("Button_Info_Nomal", "./Image/Button/ButtonPlay.bmp");
+	Load("Button_Info_OnCursor", "./Image/Button/ButtonLeave.bmp");
+	Load("Button_Info_Click", "./Image/Button/ButtonHow.bmp");
+
+
+//Load("Button_Info_Nomal","./Image/Button/ButtonHow2.bmp");
+//Load("Butto_Info_OnCursor","./Image/Button/ButtonLeave.bmp");
+//Load("Button_Info_Click","./Image/Button/ButtonHow2.bmp");
+	
 	m_MaxLoad = m_Load.size();
 }
 
