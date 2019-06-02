@@ -99,7 +99,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <WarningLevel>Level2</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -147,14 +147,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <ClInclude Include="cButton.h" />
-=======
-    <ClInclude Include="cCapture.h" />
->>>>>>> 2da323efcff4d33a78ab8e13dc778d25bcd24ead
     <ClInclude Include="cImageManager.h" />
     <ClInclude Include="cIngameScene.h" />
-    <ClInclude Include="cIngame_start.h" />
     <ClInclude Include="cInputManager.h" />
     <ClInclude Include="cLoadScene.h" />
     <ClInclude Include="cMainGame.h" />
@@ -164,7 +158,6 @@
     <ClInclude Include="cSingleTexture.h" />
     <ClInclude Include="cTexture.h" />
     <ClInclude Include="FrameWork.h" />
-    <ClInclude Include="cIngame_Info.h" />
     <ClInclude Include="PictureScene.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="singleton.h" />
@@ -172,14 +165,8 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <ClCompile Include="cButton.cpp" />
-=======
-    <ClCompile Include="cCapture.cpp" />
->>>>>>> 2da323efcff4d33a78ab8e13dc778d25bcd24ead
     <ClCompile Include="cImageManager.cpp" />
     <ClCompile Include="cIngameScene.cpp" />
-    <ClCompile Include="cIngame_start.cpp" />
     <ClCompile Include="cInputManager.cpp" />
     <ClCompile Include="cLoadScene.cpp" />
     <ClCompile Include="cMainGame.cpp" />
@@ -189,7 +176,6 @@
     <ClCompile Include="cSingleTexture.cpp" />
     <ClCompile Include="cTexture.cpp" />
     <ClCompile Include="FrameWork.cpp" />
-    <ClCompile Include="cIngame_Info.cpp" />
     <ClCompile Include="PictureScene.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
